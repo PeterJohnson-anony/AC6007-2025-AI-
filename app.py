@@ -39,5 +39,5 @@ def creditPrediction():
     return(render_template("creditPrediction.html",r=r))
 
 if __name__ == "__main__":
-    app.run(port=4004)
+    app.run()
 
