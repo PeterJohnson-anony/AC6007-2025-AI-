@@ -27,7 +27,7 @@ def DbsPrediction():
 def credit():
     return(render_template("credit.html"))
 
-@app.route("/creditPrediction",methods=["GET","POST"])
+@app.route("/creditPrediction", methods=["GET","POST"])
 def creditPrediction():
     q = float(request.form.get("q"))
     model = joblib.load("/workspaces/AC6007-2025-AI-/credit_model.pkl")
